@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>汉诺塔迭代算法</title>
+    <link href="main.css"  rel="stylesheet" />    
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="hanoi.js"></script>
+</head>
+<body>
+	<div id="content">
+		<div id="control">
+			<h1>汉诺塔演示程序</h1>
+			<label for="num">数量:</label>
+			<input type="text" id="num" value="4" />
+			<label for="speed">速度(单位ms):</label>
+			<input type="text" id="speed" value="500" />
+			<input type="button" value="初始化" id="init" />
+			<input type="button" value="开始" id="start" />
+		</div>
+
+		<div id="view">
+			<div id="block">
+				<!-- 这里存放各种块 -->
+
+			</div>
+			<div class="shugun sg1"></div>
+			<div class="shugun sg2"></div>
+			<div class="shugun sg3"></div>
+			<div class="dizuo dz1">A</div>
+			<div class="dizuo dz2">B</div>
+			<div class="dizuo dz3">C</div>
+		</div>
+		<div id="log">
+			<div class="log">移动步骤</div><div class="log" style="width:500px;">详细操作(上下左右移动操作会分步执行 - 对应一个order)</div>
+			<div style="clear:both;">
+				<textarea name="txtlog" id="txtlog" cols="30" rows="10"></textarea>
+				<textarea name="detaillog" id="detaillog" cols="77" rows="10"></textarea>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
